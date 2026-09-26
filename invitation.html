@@ -1,0 +1,311 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pallavi & Sidhartha | Wedding Invitation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f8f3ed;
+            color: #4b3a35;
+        }
+
+        /* Main background */
+        .wedding-page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 15px;
+
+            background:
+                radial-gradient(circle at 10% 20%,
+                    rgba(218, 185, 130, 0.18),
+                    transparent 25%),
+                radial-gradient(circle at 90% 80%,
+                    rgba(180, 120, 120, 0.15),
+                    transparent 25%),
+                #f8f3ed;
+        }
+
+        /* Invitation card */
+        .card {
+            width: 100%;
+            max-width: 760px;
+            background: #fffdf9;
+            text-align: center;
+            padding: 55px 45px;
+
+            border: 2px solid #c7a66a;
+            box-shadow:
+                0 15px 45px rgba(75, 58, 53, 0.20);
+
+            position: relative;
+        }
+
+        /* Decorative inner border */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            border: 1px solid #e0c898;
+            pointer-events: none;
+        }
+
+        /* Cross */
+        .cross {
+            font-size: 45px;
+            color: #b18a45;
+            margin-bottom: 15px;
+        }
+
+        .invitation-text {
+            font-size: 15px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #92785c;
+            margin-bottom: 18px;
+        }
+
+        /* Bible verse */
+        .verse {
+            max-width: 570px;
+            margin: 0 auto 28px;
+            font-size: 17px;
+            line-height: 1.8;
+            font-style: italic;
+            color: #6b5650;
+        }
+
+        .verse span {
+            display: block;
+            margin-top: 7px;
+            font-size: 14px;
+            font-style: normal;
+            color: #a17b3e;
+            letter-spacing: 1px;
+        }
+
+        .decorative-line {
+            color: #c39b55;
+            font-size: 22px;
+            margin: 15px 0;
+        }
+
+        /* Names */
+        .name {
+            font-family: "Brush Script MT", "Segoe Script", cursive;
+            font-size: 58px;
+            color: #8b5960;
+            font-weight: normal;
+        }
+
+        .and {
+            font-size: 27px;
+            color: #c39b55;
+            margin: 8px 0;
+        }
+
+        /* Invitation message */
+        .message {
+            max-width: 580px;
+            margin: 25px auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #66534e;
+        }
+
+        /* Date */
+        .details {
+            max-width: 520px;
+            margin: 30px auto;
+            padding: 22px 10px;
+
+            border-top: 1px solid #c7a66a;
+            border-bottom: 1px solid #c7a66a;
+        }
+
+        .date {
+            font-size: 29px;
+            color: #8b5960;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .location {
+            margin-top: 13px;
+            font-size: 20px;
+            color: #5d4a45;
+        }
+
+        .city {
+            font-size: 25px;
+            color: #a4773d;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Rings */
+        .rings {
+            font-size: 36px;
+            margin: 22px 0;
+        }
+
+        /* Blessing */
+        .blessing {
+            font-size: 17px;
+            line-height: 1.8;
+            font-style: italic;
+            color: #765d57;
+            max-width: 540px;
+            margin: auto;
+        }
+
+        .footer {
+            margin-top: 25px;
+            color: #a4773d;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .card {
+                padding: 45px 22px;
+            }
+
+            .name {
+                font-size: 44px;
+            }
+
+            .verse {
+                font-size: 15px;
+            }
+
+            .date {
+                font-size: 23px;
+            }
+
+            .message {
+                font-size: 15px;
+            }
+
+            .city {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wedding-page">
+
+        <div class="card">
+
+            <!-- Cross -->
+            <div class="cross">✝</div>
+
+            <div class="invitation-text">
+                With the blessings of God
+            </div>
+
+            <!-- Bible Verse -->
+            <div class="verse">
+                "Therefore what God has joined together,
+                let no one separate."
+                <span>— Mark 10:9</span>
+            </div>
+
+            <div class="decorative-line">
+                ❦ ✧ ❦
+            </div>
+
+            <!-- Names -->
+            <div class="name">
+                Pallavi
+            </div>
+
+            <div class="and">
+                &amp;
+            </div>
+
+            <div class="name">
+                Sidhartha
+            </div>
+
+            <div class="decorative-line">
+                ❦ ✧ ❦
+            </div>
+
+            <!-- Invitation -->
+            <div class="message">
+                Together with their families,
+                <strong>Pallavi &amp; Sidhartha</strong>
+                joyfully invite you to celebrate
+                their wedding ceremony.
+
+                <br><br>
+
+                Come and share in their happiness,
+                witness their promise of love,
+                and bless them as they begin
+                their beautiful journey together.
+            </div>
+
+            <!-- Wedding Details -->
+            <div class="details">
+
+                <div class="date">
+                    14 OCTOBER 2026
+                </div>
+
+                <div class="location">
+                    📍 With joy in our hearts
+                </div>
+
+                <div class="city">
+                    HYDERABAD
+                </div>
+
+            </div>
+
+            <!-- Rings -->
+            <div class="rings">
+                💍 💍
+            </div>
+
+            <!-- Another Bible blessing -->
+            <div class="blessing">
+                "And now these three remain:
+                faith, hope and love.
+                But the greatest of these is love."
+                <br>
+                <strong>— 1 Corinthians 13:13</strong>
+            </div>
+
+            <div class="footer">
+                ✝ With Love, Faith &amp; God's Blessings ✝
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
